@@ -1,0 +1,74 @@
+.feedback{
+  padding-bottom: 98px;
+  background-color: $bg-color-light;
+  &-slider{
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+    &-pagination{
+      margin: 0 auto;
+      padding-top: 60px;
+      .swiper-pagination-bullet{
+        background-color: $accent;
+        height: 20px;
+        width: 20px;
+      }
+    }
+    &-arrows{
+      position: relative;
+      height: 54px;
+      width: 100%;
+    }
+    &-left{
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      background-color: rgba($accent, 0.3);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      left: -90px;
+      bottom: 250px;
+    }
+    &-right{
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      background-color: rgba($accent, 0.3);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      right: -90px;
+      bottom: 250px;
+    }
+  }
+  &-wrapper{
+    overflow: visible;
+    position: relative;
+  }
+  &__slide{
+    display: flex;
+    &__content{
+      padding-left: 30px;
+      max-width: 546px;
+      &-rating{
+        display: block;
+        margin-bottom: 24px;
+      }
+      &-desc{
+        font-style: italic;
+        font-size: 23px;
+        letter-spacing: 0.02em;
+        margin-bottom: 12px;
+      }
+      &-author{
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}

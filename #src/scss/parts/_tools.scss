@@ -1,0 +1,90 @@
+.tools{
+  background-color: $bg-color-light;
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  &__card{
+    position: relative;
+    color: $white;
+    &-first{
+      &::after{
+        position: absolute;
+        content: "";
+        width: 265px;
+        height: 99px;
+        top: 20px;
+        right: 20px;
+        background: url("../img/tools-bg-1.svg");
+      }
+    }
+    &-second{
+      &::after{
+        position: absolute;
+        content: "";
+        width: 270px;
+        height: 138px;
+        top: 0;
+        right: 0;
+        background: url("../img/tools-bg-2.svg");
+      }
+    }
+    &-icon-bg{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 76px;
+      height: 76px;
+      background-color: $bg-color;
+      margin-bottom: 40px;
+      &-light{
+        background-color: $bg-color-secondary;
+      }
+    }
+    &-icon{
+      max-height: 50px;
+    }
+    padding: 50px;
+    border-radius: 6px;
+    max-width: 765px;
+    &:first-child{
+      background-color: $bg-color-secondary;
+    }
+    &:last-child{
+      background-color: $bg-color;
+    }
+    &-title{
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    &-desc{
+      font-size: 20px;
+      line-height: 37px;
+      padding-bottom: 20px;
+    }
+    &-link{
+      position: relative;
+      float: right;
+      padding: 15px 44px 15px 18px;
+      background-color: $white;
+      color: $accent;
+      font-size: 18px;
+      font-weight: 700;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 14px;
+        top: 50%;
+        right: 12%;
+        transform: translateY(-50%);
+        background: url("../img/tools-arrow.svg");
+      }
+    }
+  }
+}

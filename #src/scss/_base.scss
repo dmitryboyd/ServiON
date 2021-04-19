@@ -1,8 +1,22 @@
 body{
   font-family: "Nunito", sans-serif;
+  color: $primary;
 }
 
 .container{
-  max-width: 1640px;
+  max-width: 1660px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+.title-block{
+  padding-top: 100px;
+  text-align: center;
+}
+.title{
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.description{
+  font-size: 28px;
 }

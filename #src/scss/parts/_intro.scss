@@ -1,0 +1,55 @@
+.intro-wrapper{
+  padding-top: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro{
+  color: $white;
+  padding-top: 122px;
+  padding-bottom: 330px;
+  &-title{
+    font-size: 49px;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 15px;
+  }
+  &-desc{
+    font-size: 28px;
+    padding-bottom: 44px;
+  }
+  &__form{
+    &-input{
+      width: 346px;
+      height: 56px;
+      background-color: $bg-color-dark;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      padding-left: 20px;
+      &::placeholder{
+        color: $white;
+        font-size: 20px;
+      }
+    }
+    &-select{
+      width: 124px;
+      height: 56px;
+      background-color: $bg-color-dark;
+      color: $white;
+      font-size: 20px;
+      padding: 0 20px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    &-btn{
+      margin-left: 30px;
+      padding: 15px 17px;
+      background-color: $bg-color-secondary;
+      color: $white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  &__image{
+    max-width: 790px;
+  }
+}

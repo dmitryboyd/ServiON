@@ -25,14 +25,14 @@ let path={
         html: [source_folder + "/*.html", "!"+source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/script.js",
-        img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        img: source_folder + "/img/**/*.*",
         fonts: source_folder + "/fonts/*.{eot,ttf,svg,woff,woff2}",
     },
     watch: {
         html: source_folder + "/**/*.html",
         css: source_folder + "/scss/**/*.scss",
         js: source_folder + "/js/**/*.js",
-        img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        img: source_folder + "/img/**/*.*",
     },
     clean: "./" + project_folder + "/"
 }
@@ -55,7 +55,7 @@ function html() {
 }
 
 function css() {
-    return src(path.src.css)
+    return src([path.src.css, "node_modules/swiper/swiper-bundle.css"])
         .pipe(scss({
             outputStyle: "expanded"
         }))
@@ -74,7 +74,7 @@ function css() {
 }
 
 function js() {
-    return src(path.src.js)
+    return src([path.src.js, "node_modules/swiper/swiper-bundle.js"])
         .pipe(fileinclude())
         .pipe(dest(path.build.js))
         .pipe(uglify())

@@ -1,0 +1,52 @@
+.plans{
+  &__cards{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 220px;
+    text-align: center;
+  }
+  &__card{
+    max-width: 360px;
+    padding: 80px 36px 36px;
+    box-shadow: 0 3px 18px 0 rgba(34, 60, 80, 0.2);
+    &-icon{
+      padding-bottom: 36px;
+      &-pic{
+        max-width: 70px;
+        margin: 0 auto;
+      }
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 23px;
+      padding-bottom: 24px;
+    }
+    &-desc{
+      font-size: 20px;
+      line-height: 37px;
+      padding-bottom: 46px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $accent;
+      }
+    }
+    &-info{
+      font-size: 20px;
+      padding-top: 36px;
+    }
+    &-price{
+      font-size: 18px;
+      span{
+        font-size: 40px;
+      }
+    }
+  }
+}
