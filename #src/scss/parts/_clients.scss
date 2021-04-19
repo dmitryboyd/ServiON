@@ -1,0 +1,29 @@
+.clients{
+  margin-bottom: 70px;
+  &__logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
+  &__logo{
+    max-height: 65px;
+    padding-right: 20px;
+    margin: 0 auto;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  &-button{
+    text-align: center;
+    border-radius: 6px;
+    a {
+      padding: 15px 18px;
+      background-color: $bg-color-secondary;
+      color: $white;
+      font-size: 18px;
+    }
+  }
+}

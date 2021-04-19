@@ -1,6 +1,25 @@
 .feedback{
+  position: relative;
   padding-bottom: 98px;
   background-color: $bg-color-light;
+  &::before{
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: -70px;
+    height: 240px;
+    width: 240px;
+    background: url("../img/services-dot-right.svg");
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    left: 20px;
+    bottom: -70px;
+    height: 240px;
+    width: 240px;
+    background: url("../img/services-dot-left.svg");
+  }
   &-slider{
     padding-top: 80px;
     position: relative;
@@ -31,6 +50,7 @@
       cursor: pointer;
       left: -90px;
       bottom: 250px;
+
     }
     &-right{
       position: absolute;
@@ -44,6 +64,7 @@
       cursor: pointer;
       right: -90px;
       bottom: 250px;
+
     }
   }
   &-wrapper{

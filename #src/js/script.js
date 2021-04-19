@@ -10,7 +10,9 @@ const feedbackSlider = new Swiper('.feedback-slider', {
         clickable: true,
         dynamicBullets: true,
     },
-
-    spaceBetween: 134,
+    spaceBetween: 114,
     keyboard: true,
+    // breakpoints:{
+    //
+    // }
 });
