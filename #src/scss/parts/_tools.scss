@@ -6,10 +6,47 @@
     justify-content: space-between;
     padding-top: 80px;
     padding-bottom: 100px;
+    @media screen and (max-width: 1140px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__card{
     position: relative;
     color: $white;
+    max-width: 765px;
+    @media screen and (max-width: 1590px){
+      max-width: 740px;
+    }
+    @media screen and (max-width: 1540px){
+      max-width: 700px;
+    }
+    @media screen and (max-width: 1470px){
+      max-width: 670px;
+    }
+    @media screen and (max-width: 1400px){
+      max-width: 650px;
+    }
+    @media screen and (max-width: 1370px){
+      max-width: 630px;
+    }
+    @media screen and (max-width: 1320px){
+      max-width: 600px;
+    }
+    @media screen and (max-width: 1270px){
+      max-width: 580px;
+    }
+    @media screen and (max-width: 1220px){
+      max-width: 560px;
+    }
+    @media screen and (max-width: 1200px){
+      max-width: 540px;
+    }
+    @media screen and (max-width: 1140px){
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+
     &-first{
       &::after{
         position: absolute;
@@ -19,10 +56,16 @@
         top: 20px;
         right: 20px;
         background: url("../img/tools-bg-1.svg");
+        @media screen and (max-width: 540px){
+          background-size: 170px 65px;
+          background-repeat: no-repeat;
+          right: -60px;
+        }
       }
     }
     &-second{
       &::after{
+
         position: absolute;
         content: "";
         width: 270px;
@@ -30,6 +73,12 @@
         top: 0;
         right: 0;
         background: url("../img/tools-bg-2.svg");
+        @media screen and (max-width: 540px){
+          background-size: 220px 100px;
+          background-repeat: no-repeat;
+          right: -50px;
+          top: 10px;
+        }
       }
     }
     &-icon-bg{
@@ -41,12 +90,22 @@
       height: 76px;
       background-color: $bg-color;
       margin-bottom: 40px;
+      @media screen and (max-width: 1470px){
+        width: 60px;
+        height: 60px;
+      }
+      @media screen and (max-width: 1220px){
+        margin-bottom: 20px;
+      }
       &-light{
         background-color: $bg-color-secondary;
       }
     }
     &-icon{
       max-height: 50px;
+      @media screen and (max-width: 1470px){
+        max-height: 35px;
+      }
     }
     padding: 50px;
     border-radius: 6px;
@@ -61,11 +120,35 @@
       font-size: 23px;
       font-weight: 700;
       margin-bottom: 24px;
+      @media screen and (max-width: 1470px){
+        font-size: 20px;
+      }
+      @media screen and (max-width: 1220px){
+        margin-bottom: 18px;
+      }
+      @media screen and (max-width: 1140px){
+        font-size: 23px;
+      }
+      @media screen and (max-width: 640px){
+        font-size: 18px;
+      }
     }
     &-desc{
       font-size: 20px;
       line-height: 37px;
       padding-bottom: 20px;
+      @media screen and (max-width: 1470px){
+        font-size: 18px;
+        line-height: 28px;
+      }
+      @media screen and (max-width: 1140px){
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @media screen and (max-width: 640px){
+        font-size: 16px;
+        line-height: 26px;
+      }
     }
     &-link{
       position: relative;
@@ -75,6 +158,12 @@
       color: $accent;
       font-size: 18px;
       font-weight: 700;
+      @media screen and (max-width: 1470px){
+        font-size: 14px;
+      }
+      @media screen and (max-width: 1330px){
+        padding: 10px 30px 10px 12px
+      }
       &::after{
         position: absolute;
         content: "";
@@ -84,6 +173,11 @@
         right: 12%;
         transform: translateY(-50%);
         background: url("../img/tools-arrow.svg");
+        @media screen and (max-width: 1330px){
+          background-size: 5px 12px;
+          background-repeat: no-repeat;
+          right: 10%;
+        }
       }
     }
   }

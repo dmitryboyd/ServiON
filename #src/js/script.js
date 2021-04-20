@@ -1,5 +1,7 @@
 const feedbackSlider = new Swiper('.feedback-slider', {
-    slidesPerView: 2,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    // autoplay: true,
     navigation: {
         nextEl: '.feedback-slider-right',
         prevEl: '.feedback-slider-left',
@@ -10,9 +12,12 @@ const feedbackSlider = new Swiper('.feedback-slider', {
         clickable: true,
         dynamicBullets: true,
     },
-    spaceBetween: 114,
+    spaceBetween: 20,
     keyboard: true,
-    // breakpoints:{
-    //
-    // }
+    breakpoints:{
+        942:{
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        }
+    }
 });

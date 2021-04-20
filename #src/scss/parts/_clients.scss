@@ -1,17 +1,43 @@
 .clients{
   margin-bottom: 70px;
+
   &__logos{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 90px;
-    flex-wrap: wrap;
     padding-bottom: 70px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1440px){
+      padding-top: 60px;
+    }
+    @media screen and (max-width: 800px){
+      padding-top: 40px;
+
+    }
   }
   &__logo{
-    max-height: 65px;
+    //max-height: 65px;
+    max-width: 200px;
     padding-right: 20px;
     margin: 0 auto;
+    img{
+      object-fit: cover;
+    }
+    @media screen and (max-width: 1440px){
+      max-width: 180px;
+    }
+    @media screen and (max-width: 1200px){
+      max-width: 160px;
+    }
+    @media screen and (max-width: 920px){
+      max-width: 140px;
+    }
+    @media screen and (max-width: 800px){
+      max-width: 120px;
+      margin-bottom: 10px;
+      width: 33.3%;
+    }
     &:last-child{
       padding-right: 0;
     }
@@ -24,6 +50,11 @@
       background-color: $bg-color-secondary;
       color: $white;
       font-size: 18px;
+      border-radius: 6px;
+      @media screen and (max-width: 1200px){
+        padding: 11px 14px;
+        font-size: 16px;
+      }
     }
   }
 }

@@ -10,6 +10,12 @@
     background-color: $bg-color-secondary;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     z-index: -3;
+    @media screen and (max-width: 700px){
+        height: 750px;
+    }
+    @media screen and (max-width: 530px){
+      height: 600px;
+    }
   }
   &::after{
     position: absolute;
@@ -22,6 +28,12 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
     z-index: -2;
+    @media screen and (max-width: 700px){
+      height: 720px;
+    }
+    @media screen and (max-width: 530px){
+      height: 610px;
+    }
   }
 }
 .nav{

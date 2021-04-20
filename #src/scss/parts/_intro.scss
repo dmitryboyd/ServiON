@@ -2,22 +2,85 @@
   padding-top: 78px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1340px){
+    justify-content: center;
+  }
+  @media screen and (max-width: 700px){
+    padding-top: 60px;
+  }
+  @media screen and (max-width: 530px){
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 530px){
+    padding-top: 20px;
+  }
 }
 
 .intro{
   color: $white;
   padding-top: 122px;
   padding-bottom: 330px;
+  @media screen and (max-width: 1340px){
+    text-align: center;
+  }
+  @media screen and (max-width: 700px){
+    padding-bottom: 200px;
+  }
+
+  @media screen and (max-width: 540px){
+    padding-bottom: 160px;
+  }
+  @media screen and (max-width: 500px){
+    padding-bottom: 120px;
+  }
+
   &-title{
     font-size: 49px;
     font-family: "Roboto", sans-serif;
     padding-bottom: 15px;
+    @media screen and (max-width: 1540px){
+      font-size: 36px;
+    }
+    @media screen and (max-width: 1340px){
+      font-size: 50px;
+    }
+    @media screen and (max-width: 700px){
+      font-size: 36px;
+    }
+    @media screen and (max-width: 530px){
+      font-size: 24px;
+    }
   }
   &-desc{
     font-size: 28px;
     padding-bottom: 44px;
+    @media screen and (max-width: 1540px){
+      font-size: 20px;
+    }
+    @media screen and (max-width: 1340px){
+      padding-bottom: 60px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: 700px){
+      font-size: 20px;
+    }
+    @media screen and (max-width: 530px){
+      font-size: 16px;
+    }
   }
   &__form{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 670px){
+      justify-content: center;
+    }
+    &-wrap{
+      display: flex;
+      @media screen and (max-width: 670px){
+        padding-bottom: 30px;
+      }
+    }
+
     &-input{
       width: 346px;
       height: 56px;
@@ -25,9 +88,25 @@
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px;
       padding-left: 20px;
+      @media screen and (max-width: 1540px){
+        width: 300px;
+      }
+      @media screen and (max-width: 530px){
+        height: 44px;
+        width: 280px;
+      }
+      @media screen and (max-width: 500px){
+        width: 220px;
+      }
       &::placeholder{
         color: $white;
         font-size: 20px;
+        @media screen and (max-width: 1540px){
+          font-size: 16px;
+        }
+        @media screen and (max-width: 500px){
+          font-size: 12px;
+        }
       }
     }
     &-select{
@@ -39,6 +118,17 @@
       padding: 0 20px;
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
+      @media screen and (max-width: 530px){
+        height: 44px;
+        width: 100px;
+        font-size: 16px;
+      }
+      @media screen and (max-width: 500px){
+        width: 80px;
+      }
+      @media screen and (max-width: 530px){
+        font-size: 10px;
+      }
     }
     &-btn{
       margin-left: 30px;
@@ -47,9 +137,27 @@
       color: $white;
       cursor: pointer;
       border-radius: 6px;
+      @media screen and (max-width: 1540px){
+        font-size: 16px;
+      }
+      @media screen and (max-width: 700px){
+        font-size: 14px;
+      }
+      @media screen and (max-width: 530px){
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
     }
   }
   &__image{
+    padding-top: 40px;
     max-width: 790px;
+    @media screen and (max-width: 1540px){
+      max-width: 650px;
+    }
+    @media screen and (max-width: 1340px){
+      display: none;
+    }
   }
 }
