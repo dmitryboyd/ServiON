@@ -40,15 +40,32 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @media screen and (max-width: 1000px){
+    padding-top: 40px;
+  }
   &__logo{
     padding-bottom: 12px;
+    @media screen and (max-width: 1000px){
+      padding-bottom: 0;
+    }
   }
   &__list{
     display: flex;
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
     &-item{
       height: 90px;
       margin-left: 70px;
       font-size: 20px;
+      @media screen and (max-width: 1500px){
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 1300px){
+        margin-left: 20px;
+        font-size: 16px;
+      }
       a{
         display: block;
         padding: 50px 26px 0;
@@ -71,6 +88,10 @@
           background-color: $white;
           color: $bg-color-secondary;
           border-radius: 6px;
+          @media screen and (max-width: 1300px){
+            padding: 10px 40px 10px 15px;
+          }
+
           &::after{
             position: absolute;
             content: "";
@@ -78,7 +99,7 @@
             transform: translateY(50%);
             width: 14px;
             height: 14px;
-            background: url("../img/user-icon.svg");
+            background: url("../img/user-icon.svg") no-repeat;
           }
         }
       }

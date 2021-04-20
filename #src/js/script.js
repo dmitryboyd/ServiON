@@ -1,7 +1,7 @@
+//slider feedback section
 const feedbackSlider = new Swiper('.feedback-slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    // autoplay: true,
     navigation: {
         nextEl: '.feedback-slider-right',
         prevEl: '.feedback-slider-left',
@@ -21,3 +21,20 @@ const feedbackSlider = new Swiper('.feedback-slider', {
         }
     }
 });
+
+// burger menu
+const body = document.querySelector("body")
+const button = document.querySelector(".burger-button")
+const burger = document.querySelector(".burger-line")
+const burgerNav = document.querySelector(".burger__nav")
+const burgerActive = "burger-active"
+const menuListActive = "nav-active"
+
+button.onclick = (e) => {
+    e.preventDefault()
+    burger.classList.toggle(burgerActive)
+    burgerNav.classList.toggle(menuListActive)
+    body.classList.toggle("no-scroll")
+}
+
+

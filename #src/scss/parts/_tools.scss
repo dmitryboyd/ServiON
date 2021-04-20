@@ -57,9 +57,7 @@
         right: 20px;
         background: url("../img/tools-bg-1.svg");
         @media screen and (max-width: 540px){
-          background-size: 170px 65px;
-          background-repeat: no-repeat;
-          right: -60px;
+          display: none;
         }
       }
     }
@@ -74,10 +72,7 @@
         right: 0;
         background: url("../img/tools-bg-2.svg");
         @media screen and (max-width: 540px){
-          background-size: 220px 100px;
-          background-repeat: no-repeat;
-          right: -50px;
-          top: 10px;
+          display: none;
         }
       }
     }

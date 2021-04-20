@@ -3,10 +3,15 @@ body{
   color: $primary;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 .container{
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 .title-block{
   padding-top: 100px;
