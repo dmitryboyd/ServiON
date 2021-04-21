@@ -55,7 +55,10 @@ function html() {
 }
 
 function css() {
-    return src([path.src.css, "node_modules/swiper/swiper-bundle.css"])
+    return src([
+        path.src.css,
+        "node_modules/swiper/swiper-bundle.css"
+    ])
         .pipe(scss({
             outputStyle: "expanded"
         }))
@@ -74,7 +77,11 @@ function css() {
 }
 
 function js() {
-    return src([path.src.js, "node_modules/swiper/swiper-bundle.js"])
+    return src([
+        path.src.js,
+        "node_modules/swiper/swiper-bundle.js",
+        "node_modules/jquery/dist/jquery.min.js"
+    ])
         .pipe(fileinclude())
         .pipe(dest(path.build.js))
         .pipe(uglify())
