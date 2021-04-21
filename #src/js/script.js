@@ -62,5 +62,11 @@ $('.scroll-link').click(function(e){
     }
 });
 
-
+//plans cards
+$('.plans__card').hover(function(){
+    $(this).find(".plans__card-button").toggle("card-active")
+    // const indexCard = $(this).index()
+    // const plansCard = $('.plans__card')
+    // plansCard.children(".plans__card-button").eq(indexCard).toggle("card-active");
+});
 
