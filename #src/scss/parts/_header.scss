@@ -58,6 +58,7 @@
       height: 90px;
       margin-left: 70px;
       font-size: 20px;
+      transition: all .1s ease-in;
       @media screen and (max-width: 1500px){
         margin-left: 50px;
         font-size: 18px;
@@ -68,9 +69,9 @@
       }
       a{
         display: block;
-        padding: 50px 26px 0;
+        padding: 50px 26px;
         color: $white;
-
+        //padding-bottom: 20px;
       }
       &:hover:not(:last-child){
         background-color: $bg-color-secondary;
@@ -88,10 +89,12 @@
           background-color: $white;
           color: $bg-color-secondary;
           border-radius: 6px;
+          &:hover{
+            background-color: rgba($white, 0.9);
+          }
           @media screen and (max-width: 1300px){
             padding: 10px 40px 10px 15px;
           }
-
           &::after{
             position: absolute;
             content: "";
@@ -100,6 +103,7 @@
             width: 14px;
             height: 14px;
             background: url("../img/user-icon.svg") no-repeat;
+
           }
         }
       }
